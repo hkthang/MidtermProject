@@ -19,3 +19,30 @@ section {
     margin-bottom: 2em;
 }
 
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    width: 100%;
+}
+
+.fade {
+    animation: fade 2s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%, 100% {
+        opacity: 0;
+    }
+    10%, 90% {
+        opacity: 1;
+    }
+
+}
