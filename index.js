@@ -15,7 +15,7 @@ function loadMovies(myMovies) {
 
     // Read every movie from the array
     for (var i = 0; i < myMovies.movies.length; i++) {
-        
+
         let title = myMovies.movies[i].title;
         let year = myMovies.movies[i].year;
         let url = myMovies.movies[i].url;
@@ -54,15 +54,15 @@ function loadMovies(myMovies) {
 
         let ccard = document.getElementById(card);
 
-        console.log("created card .......",card,".......",ccard);
+        console.log("created card .......", card, ".......", ccard);
         cards.push(ccard);
 
         console.log(checkbox);
         console.log(card);
     } // end of for
 
-    console.log("heere are checboxes",checkboxes);
-    console.log("here are cards",cards);
+    console.log("heere are checboxes", checkboxes);
+    console.log("here are cards", cards);
 
     checkboxes.forEach((checkboxParam, index) => {
         console.log(index);
@@ -77,7 +77,25 @@ function loadMovies(myMovies) {
 
     card = [""];
 
-} 
+}
+
+function seachMovie() { 
+    var input, filter, card, title, i, txtValue;
+    input = document.getElementById('search');
+    filter = input.value.toUpperCase();
+    card = document.getElementsByClassName('card');
+    for (i = 0; i < card.length; i++) {
+        title = card[i].querySelector('.card-text');
+        txtValue = title.textContent || title.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            card[i].style.display = "";
+        } else {
+            card[i].style.display = "none";
+            console.log("No movie found");
+        }
+    }
+}
+
 
 document.addEventListener('DOMContentLoaded', function () {
     let slideIndex = 0;
@@ -96,13 +114,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if (slideIndex > slides.length) {
             slideIndex = 1;
         }
-
-        slides[slideIndex - 1].style.display = 'block';
-
         setTimeout(showSlides, 3000); // Change slide every 3 seconds
     }
 });
 
 
-
-
+    

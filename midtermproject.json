@@ -12,7 +12,7 @@
       "year": 2024,
       "url": "./myotherimages/2.JPG"
     },
-    {
+    { 
       "movieId": "76788",
       "title": "My Favorite View!",
       "year": 2024,
@@ -23,13 +23,6 @@
       "title": "Coover Hall",
       "year": 2024,
       "url": "./myotherimages/4.JPG"
-    },
-    {
-      "movieId": "BB1233",
-      "title": "Iowa State University",
-      "year": 2024,
-      "url": "./myotherimages/10.JPG"
     }
   ]
 }
-
