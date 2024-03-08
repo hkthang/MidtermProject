@@ -10,6 +10,7 @@ function loadMovies(myMovies) {
     // Find the element “col” in HTML
     var CardMovie = document.getElementById("col");
 
+    // if the search bar form is submitted then call the function searchMovies
     var checkboxes = [];
     var cards = [];
 
@@ -22,6 +23,7 @@ function loadMovies(myMovies) {
 
         var checkbox = "checkbox" + i.toString();
         var card = "card" + i.toString();
+
 
         // create a new HTML div division
         let AddCardMovie = document.createElement("div");
@@ -78,45 +80,6 @@ function loadMovies(myMovies) {
     card = [""];
 
 }
-
-function seachMovie() { 
-    var input, filter, card, title, i, txtValue;
-    input = document.getElementById('search');
-    filter = input.value.toUpperCase();
-    card = document.getElementsByClassName('card');
-    for (i = 0; i < card.length; i++) {
-        title = card[i].querySelector('.card-text');
-        txtValue = title.textContent || title.innerText;
-        if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            card[i].style.display = "";
-        } else {
-            card[i].style.display = "none";
-            console.log("No movie found");
-        }
-    }
-}
-
-
-document.addEventListener('DOMContentLoaded', function () {
-    let slideIndex = 0;
-    showSlides();
-
-    function showSlides() {
-        let i;
-        const slides = document.getElementsByClassName('mySlides');
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = 'none';
-        }
-
-        slideIndex++;
-
-        if (slideIndex > slides.length) {
-            slideIndex = 1;
-        }
-        setTimeout(showSlides, 3000); // Change slide every 3 seconds
-    }
-});
 
 
     
