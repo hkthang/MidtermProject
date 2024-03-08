@@ -6,6 +6,15 @@ fetch("./midtermproject.json")
     .then(response => response.json())
     .then(myMovies => loadMovies(myMovies));
 
+
+fetch("./music.json")
+    .then(response => response.json())
+    .then(music => loadMusic(music));
+
+function loadMusic(music) {
+  
+}
+
 function loadMovies(myMovies) {
     // Find the element “col” in HTML
     var CardMovie = document.getElementById("col");
@@ -30,10 +39,12 @@ function loadMovies(myMovies) {
         // add class = “col” to new division for Bootstrap
         AddCardMovie.classList.add("col");
         // create Bootstrap card
-        AddCardMovie.innerHTML = `
-            <input type="checkbox" id=${checkbox} class="form-check-input" checked>
-            <label for=${checkbox} class="form-check-label">Show Image ${i}</label>
 
+
+        // add below
+        // <input type="checkbox" id=${checkbox} class="form-check-input" checked>
+        // <label for=${checkbox} class="form-check-label">Show Image ${i}</label>
+        AddCardMovie.innerHTML = `
             <div id=${card} class="card shadow-sm">
                 <img src=${url} class="card-img-top" alt="..."></img>
                     <div class="card-body">
@@ -80,6 +91,3 @@ function loadMovies(myMovies) {
     card = [""];
 
 }
-
-
-    
