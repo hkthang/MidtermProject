@@ -16,10 +16,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 <h5 class="card-title">${product.name}</h5>
                 <p class="card-text">${product.description}</p>
                 <div class="d-flex justify-content-between align-items-center">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                    <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-              </div>
             </div>
           `;
           container.appendChild(card); // Append the card to the container
