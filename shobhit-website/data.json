@@ -1,0 +1,33 @@
+[
+    {
+      "name": "Aura Core Hoodie",
+      "image": "../shobhit-website/images/catalog-image-1.jpeg",
+      "description": "The Aura Athleisure Core Hoodie is a must-have for any wardrobe. This timeless design offers both comfort and effortless style."
+    },
+    {
+      "name": "Studio Neutrals TrackSuit",
+      "image": "../shobhit-website/images/unnamed.png",
+      "description": "Master effortless style and comfort with the Studio Neutrals Tracksuit. This versatile set features a relaxed-fit tracksuit in a timeless neutral color, perfect for studio workouts, lounging, or running errands."
+    },
+    {
+      "name": "Aura Allure",
+      "image": "../shobhit-website/images/ladies-set.png",
+      "description": "Elevate your workout style with the Aura Allure Set. Move with confidence and radiate allure, whether you're crushing your goals at the gym or taking on your day."
+    }, 
+    {
+        "name": "Apex Performance Set", 
+        "image": "../shobhit-website/images/product-4.png", 
+        "description" : "Featuring a breathable top and shorts, it is meticulously crafted for unrestricted movement and exceptional comfort. Engineered for peak performance, the moisture-wicking fabric keeps you cool and dry during even the most intense workouts. Push your limits and experience the difference of Aura Athleisure."
+    },
+    {
+        "name": "Studio Sculpt Set", 
+        "image": "../shobhit-website/images/product-5.png", 
+        "description" : "This set offers maximum comfort and freedom of movement for your studio workouts. Crafted from moisture-wicking fabric, the set ensures you stay cool and dry while pushing your limits. The sleek design and flattering fit will keep you feeling confident and focused on achieving your fitness goals. Elevate your studio experience with Aura Athleisure."
+    }, 
+    {
+        "name": "Studio Serenity Sweatshirt", 
+        "image": "../shobhit-website/images/product-6.png", 
+        "description" : "This ultra-soft sweatshirt, designed for ultimate comfort and relaxation, is your perfect companion for pre- or post-workout unwinding. The breathable fabric keeps you cool while the relaxed fit allows for complete freedom of movement."
+    }
+  ]
+  
