@@ -171,8 +171,8 @@
           <h4>Find the Other Pages Here : </h4>
           <ul class="list-unstyled">
             <li><a href="./product-page.html" class="text-white">Shobhit's Product Page</a></li>
-            <li><a href="../about.html" class="text-white">The About Page</a></li>
-            <li><a href="../index.html" class="text-white">Hang's Page</a></li>
+            <li><a href="../index.html" class="text-white">The About Page</a></li>
+            <li><a href="../hang-website/hang-album.html" class="text-white">Hang's Page</a></li>
           </ul>
         </div>
       </div>
@@ -181,7 +181,6 @@
   <div class="navbar navbar-dark bg-dark shadow-sm">
     <div class="container">
       <a href="#" class="navbar-brand d-flex align-items-center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
         <strong>Aura Athleisure</strong>
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
@@ -210,37 +209,7 @@
     </div>
   </div>
 
-  <script>
-    // Wait for the DOM content to be fully loaded
-    document.addEventListener('DOMContentLoaded', function () {
-      fetch('./data.json') // Fetch the JSON file
-        .then(response => response.json()) // Parse the JSON response
-        .then(data => {
-          const container = document.querySelector('.row-cols-1'); // Select the container where products will be inserted
-          
-          // Loop through the data and create HTML elements for each product
-          data.forEach(product => {
-            const card = document.createElement('div'); // Create a div element for the product card
-            card.classList.add('col'); // Add the 'col' class to the card
-            card.innerHTML = `
-              <div class="card shadow-sm">
-                <img src="${product.image}" class="bd-placeholder-img card-img-top" width="100%" height="225" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false">
-                <div class="card-body">
-                  <h5 class="card-title">${product.name}</h5>
-                  <p class="card-text">${product.description}</p>
-                  <div class="d-flex justify-content-between align-items-center">
-                    <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                      <button type="button" class="btn btn-sm btn-outline-secondary">Add to Cart</button>
-                </div>
-              </div>
-            `;
-            container.appendChild(card); // Append the card to the container
-          });
-        })
-        .catch(error => console.error('Error fetching products:', error)); // Log any errors that occur during fetching
-    });
-  </script>
+  <script src = './catalog.js'></script>
 
 </main>
 
