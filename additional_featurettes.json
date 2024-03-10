@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Shobhit Sarkar",
+        "description": " Shobhit is currently working as a Part Time Software Engineer with John Deere, where he's involved in the UX design and implementation of the John Deere Sales Center Application. He’s also interned with Collins Aerospace as an AI Engineering Intern, where he built a Sentiment Engine API which analyzes user input and determines the tone of the text being parsed. He has also been a research assistant with the Physics and Astronomy Department, where he analyzed quantum algorithms runtimes based on implementation types (AI - based v/s non -AI based). He’s also worked as a research assistant in the Material Science department, where he created  T-T-V datasets for training machine learning models (YOLO-v4)."
+    },
+    {
+        "title": "Hang Kim",
+        "description": "Hang is pursuing a major in Cyber Security Engineering with a minor in Computer Science. Hang has completed Com S 309, a course with prerequisites Com S 227 and 228. As part of this course, Hang built an application called Fitness, with a particular emphasis on backend implementation using a MySQL database and IntelliJ. Hang has substantial experience in utilizing APIs, a crucial skill for a developer."
+    }
+]
